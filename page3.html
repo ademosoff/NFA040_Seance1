@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="pseudo">Votre pseudo :</label>
+        <input type="text" id="pseudo" name="pseudo" required><br><br>
+
+        <label for="password">Votre mot de passe :</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm_password">Ressaisir votre mot de passe :</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+        <fieldset>
+            <legend>OS préféré :</legend>
+            <input type="radio" id="windows_xp" name="os" value="Windows XP">
+            <label for="windows_xp">Windows XP</label><br>
+            <input type="radio" id="windows_vista" name="os" value="Windows Vista">
+            <label for="windows_vista">Windows Vista</label><br>
+            <input type="radio" id="macos" name="os" value="MacOS X">
+            <label for="macos">MacOS X</label><br>
+            <input type="radio" id="linux" name="os" value="Linux">
+            <label for="linux">Linux</label><br>
+            <input type="radio" id="other_os" name="os" value="Autre">
+            <label for="other_os">Autre</label><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Vous possédez :</legend>
+            <input type="checkbox" id="desktop" name="device" value="Ordinateur de bureau">
+            <label for="desktop">Un ordinateur de bureau</label><br>
+            <input type="checkbox" id="laptop" name="device" value="Portable">
+            <label for="laptop">Un portable</label><br>
+            <input type="checkbox" id="netbook" name="device" value="Netbook">
+            <label for="netbook">Un netbook</label><br>
+            <input type="checkbox" id="tablet" name="device" value="Tablette">
+            <label for="tablet">Une tablette (Pad)</label><br>
+        </fieldset>
+        <br>
+
+        <label for="profession">Votre profession :</label>
+        <select id="profession" name="profession">
+            <option value="Chômeur">Chômeur</option>
+            <option value="Étudiant">Étudiant</option>
+            <option value="Fonctionnaire">Fonctionnaire</option>
+            <option value="Privé">Privé</option>
+            <option value="Retraité">Retraité</option>
+        </select>
+        <br><br>
+
+        <button type="submit">S'inscrire !</button>
+    </form>
+</body>
+</html>
