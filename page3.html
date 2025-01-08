@@ -3,7 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire</title>
+    <title>Formulaire Centré</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            border: none;
+            margin-bottom: 15px;
+        }
+        select {
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <form action="#" method="post">
@@ -29,7 +53,6 @@
             <input type="radio" id="other_os" name="os" value="Autre">
             <label for="other_os">Autre</label><br>
         </fieldset>
-        <br>
 
         <fieldset>
             <legend>Vous possédez :</legend>
@@ -42,10 +65,9 @@
             <input type="checkbox" id="tablet" name="device" value="Tablette">
             <label for="tablet">Une tablette (Pad)</label><br>
         </fieldset>
-        <br>
 
         <label for="profession">Votre profession :</label>
-        <select id="profession" name="profession">
+        <select id="profession" name="profession" size="5">
             <option value="Chômeur">Chômeur</option>
             <option value="Étudiant">Étudiant</option>
             <option value="Fonctionnaire">Fonctionnaire</option>
